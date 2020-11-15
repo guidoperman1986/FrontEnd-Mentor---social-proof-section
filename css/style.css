@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Spartan', sans-serif;
+  background-color: #f7f2f7;
+  min-height: 100vh; }
+
+.container {
+  /* definicion del tamaño del container */
+  max-width: 100rem;
+  margin: 3rem auto;
+  background-color: white;
+  min-height: 50rem; }
+
+.content {
+  margin: 2rem;
+  padding: 8rem 8rem; }
+  .content__arriba {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+    @media only screen and (max-width: 900px) {
+      .content__arriba {
+        flex-direction: column; } }
+    .content__arriba--1 {
+      flex: 0 0 45%; }
+    .content__arriba--1 h1 {
+      font-size: 3rem; }
+      @media only screen and (max-width: 900px) {
+        .content__arriba--1 h1 {
+          /* text-align: center; */
+          align-self: stretch; } }
+    .content__arriba--2 {
+      margin-top: 2rem;
+      flex: 1; }
+    .content__arriba .titulo {
+      max-width: 70%;
+      color: #502050; }
+      @media only screen and (max-width: 900px) {
+        .content__arriba .titulo {
+          max-width: 100%;
+          text-align: center; } }
+    .content__arriba .subtitulo {
+      margin: .5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 75%;
+      text-align: justify;
+      color: #937b92; }
+      @media only screen and (max-width: 900px) {
+        .content__arriba .subtitulo {
+          max-width: 100%;
+          text-align: center; } }
+  .content__abajo {
+    /* padding-top: 10rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 0 auto; }
+    @media only screen and (max-width: 900px) {
+      .content__abajo {
+        flex-direction: column;
+        align-items: center; } }
+    .content__abajo__caja {
+      background-color: #502050;
+      width: 25rem;
+      border-radius: .5rem;
+      height: 14rem; }
+      .content__abajo__caja > div {
+        padding: .5rem .5rem; }
+      .content__abajo__caja__user {
+        display: flex;
+        align-items: center;
+        margin: 1rem 1rem; }
+        .content__abajo__caja__user > * > h3 {
+          color: white; }
+        .content__abajo__caja__user > * > h4 {
+          color: #ee68a4; }
+        .content__abajo__caja__user > img {
+          border-radius: 50%;
+          margin-right: 1rem;
+          width: 3rem; }
+      .content__abajo__caja__comment {
+        color: white;
+        font-size: .9rem;
+        margin: 2rem 1rem; }
+  .content .posicion1 {
+    margin-top: 4.5rem; }
+  .content .posicion2 {
+    margin-top: 6rem; }
+  .content .posicion3 {
+    margin-top: 7.5rem; }
+  .content__rate {
+    padding-top: 10px; }
+    .content__rate--1 {
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 900px) {
+        .content__rate--1 {
+          margin-left: 0; } }
+    .content__rate--2 {
+      margin-left: 3rem; }
+    .content__rate--3 {
+      margin-left: 7rem; }
+    @media only screen and (max-width: 900px) {
+      .content__rate--1, .content__rate--2, .content__rate--3 {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; } }
+  .content__rate div {
+    margin-bottom: 3rem; }
+  .content__rate span {
+    padding: 1rem 3rem;
+    padding-right: 4rem;
+    background-color: #F7F2F8;
+    border-radius: .8rem;
+    font-weight: bolder;
+    color: #502050;
+    /* @media only screen and (max-width: 900px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;            
+            align-items: center;
+            
+        } */ }
+  .content__rate img {
+    padding-right: 1rem;
+    vertical-align: middle;
+    background-repeat: repeat-x; }
+
+.attribution {
+  text-align: center;
+  margin-bottom: 2.2rem;
+  font-size: 1.2rem; }
+  .attribution a {
+    text-decoration: none;
+    color: #ee68a4;
+    transition: font-size .1s ease-in; }
+  .attribution a:hover {
+    text-decoration: underline;
+    font-size: 1.3rem; }
